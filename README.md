@@ -12,64 +12,70 @@ This project implements machine learning techniques to predict insurance charges
 - `Results`
 - `Conclusion`
 
-- **Introduction**
+# Insurance Cost Prediction Using Machine Learning
 
-  The objective of this project is to develop a predictive model for insurance charges based on individual attributes. This involves implementing regression techniques, evaluating model performance, and identifying key factors influencing insurance costs.
+This project analyzes an insurance dataset to predict costs using machine learning techniques. The notebook includes steps for data preprocessing, exploratory data analysis (EDA), model building, and evaluation.
 
-**Dataset**
+## Table of Contents
 
-The dataset contains rows of samples and columns of attributes, including the target variable (charges). Key features include:
+- [Introduction](#introduction)
+- [Dataset](#dataset)
+- [Data Preprocessing](#data-preprocessing)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+- [Model Development](#model-development)
+- [Results](#results)
+- [Conclusion](#conclusion)
 
-- `Age`:
- Age of the individual.
-- `Bmi`: 
-Body Mass Index, a measure of body fat.
-- `Childrens`: 
-Number of dependents.
-- `Smoker`: 
-Whether the individual smokes (yes/no).
-- `Region`:
- Geographic region.
-- `Charges`:
- Medical insurance cost (target variable).
+## Introduction
 
-**Data Preprocessing**
+The objective of this project is to predict insurance costs based on customer features, including demographic and health-related attributes. The project explores various machine learning models to achieve the best predictive accuracy.
 
-- `Missing Values:`
- Any missing values were handled through Random Imputaion.
+## Dataset
 
-- `Categorical Encoding:`
- Categorical features were encoded using One-Hot Encoding.
+The dataset contains the following columns:
+- **age:** Age of the policyholder.
+- **sex:** Gender of the policyholder.
+- **bmi:** Body mass index.
+- **children:** Number of children covered by insurance.
+- **smoker:** Whether the policyholder is a smoker.
+- **region:** Residential region of the policyholder.
+- **charges:** Insurance cost (target variable).
 
-- `Feature Scaling:`
- Numerical features were scaled using Normalization to improve model performance.
+## Data Preprocessing
 
- 
-## Methodlogy
+1. **Handling Missing Values:** Checked and managed missing data.
+2. **Validation:** Verified data integrity using pandas' `unique` method.
+3. **Encoding Categorical Data:** Applied encoding for `sex`, `smoker`, and `region` columns.
+4. **Scaling:** Standardized numerical features using normalization techniques.
 
-- `Data Exploration`
+## Exploratory Data Analysis (EDA)
 
-Visualizations of the data distribution and correlations between features and the target variable.
-### Model Development
+- Visualized data distributions and correlations.
+- Identified trends between features and the target variable.
 
-1. `Implementation of Multiple Linear Regression.`
+## Model Development
 
-   In this project, we implemented multiple linear regression using Python's scikit-learn library. The following steps outline the process:
-   - **Import Libraries**
-First, we import the necessary libraries for data manipulation and model building.
-   
-   - **Load the Dataset**
-Next, we load the dataset and perform initial exploration.
+- Implemented machine learning models for prediction:
+  - Linear Regression
+  - Regularized Regression (Lasso and Ridge)
+- Evaluated models using metrics such as R² and Mean Squared Error (MSE).
 
-   - **Split the Data**
+## Results
 
-We split the dataset into training and testing sets.
+- Achieved **R² Score:** 0.089 (train), 0.029 (test).
+- MSE on test set: 989,558,744.54.
 
-   - **Train the Model**
-We create an instance of the LinearRegression model and fit it to the training data.
-    
-  - **Make Predictions**
+## Conclusion
 
-After training, we use the model to make predictions on the test set.
+This project highlights the importance of data preprocessing and regularization in predicting insurance costs. Future work could include:
+- Exploring advanced algorithms like Random Forest or Gradient Boosting.
+- Incorporating additional features for better predictive power.
 
-- **Evaluate the Model**
+---
+
+### How to Run
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/insurance-prediction.git
+   cd insurance-prediction
