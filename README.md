@@ -1,6 +1,6 @@
 # Insurance Cost Prediction Using Machine Learning
 
-This project analyzes an insurance dataset to predict costs using machine learning techniques. The notebook includes steps for data preprocessing, exploratory data analysis (EDA), model building, and evaluation.
+The objective of this project is to develop a predictive model for insurance charges based on individual attributes. This involves implementing regression techniques, evaluating model performance, and identifying key factors influencing insurance costs.This project analyzes an insurance dataset to predict costs using machine learning techniques. The notebook includes steps for data preprocessing, exploratory data analysis (EDA), model building, and evaluation.
 
 ## Table of Contents
 
