@@ -65,3 +65,14 @@ This project highlights the importance of data preprocessing and regularization 
    ```bash
    git clone https://github.com/yourusername/insurance-prediction.git
    cd insurance-prediction
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+3.Open the Jupyter Notebook:
+  ```bash
+jupyter notebook ml_prjct.ipynb
+
+
+You can copy this markdown content into a `README.md` file for your repository. Let me know if you'd like further adjustments! &#8203;:contentReference[oaicite:0]{index=0}&#8203;
+
+
